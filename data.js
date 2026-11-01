@@ -1,0 +1,20 @@
+export const initialProjects = [
+  { id: "CI-2026-001", title: "Reduce material giveaway – PPR Elbow 20 mm", department: "Production", area: "Area A", owner: "Production Team", type: "Kaizen", status: "On track", progress: 78, loss: "Cost", benefit: 185000, target: 200000, updated: "2026-10-30", problem: "Runner material consumption is higher than the target.", action: "Review runner design and optimize process parameters." },
+  { id: "CI-2026-002", title: "Reduce defect rate in injection process", department: "Quality", area: "Area B", owner: "Quality Team", type: "SGA", status: "At risk", progress: 45, loss: "Quality", benefit: 92000, target: 150000, updated: "2026-10-29", problem: "Defect rate has increased compared with the baseline.", action: "Analyze defect patterns and verify corrective actions." },
+  { id: "CI-2026-003", title: "Improve changeover time – Line 3", department: "Production", area: "Area C", owner: "Line 3 Team", type: "Kaizen", status: "Delayed", progress: 30, loss: "Delivery", benefit: 40000, target: 120000, updated: "2026-10-24", problem: "Changeover time is longer than the standard.", action: "Apply SMED and standardize preparation activities." },
+  { id: "CI-2026-004", title: "Reduce compressed air leakage", department: "Maintenance", area: "Area D", owner: "Maintenance Team", type: "FI", status: "On track", progress: 90, loss: "Cost", benefit: 130000, target: 140000, updated: "2026-10-31", problem: "Compressed air leakage causes energy loss.", action: "Inspect, tag and repair leakage points." },
+  { id: "CI-2026-005", title: "Improve workplace safety at packing zone", department: "Safety", area: "Area E", owner: "Safety Team", type: "Kaizen", status: "On track", progress: 65, loss: "Safety", benefit: 0, target: 0, updated: "2026-10-28", problem: "Potential ergonomic and handling risks at packing zone.", action: "Review layout and introduce visual controls." }
+];
+
+export const initialCases = [
+  { id: "KB-001", title: "Reduce material giveaway – PPR Elbow 20 mm", type: "Kaizen", department: "Production", loss: "Cost", summary: "Optimization of runner design and process parameters to reduce material consumption.", tags: ["Runner", "Material", "Injection"], result: "Material usage reduced by 8% (sample case)." },
+  { id: "KB-002", title: "Defect reduction using parameter standardization", type: "SGA", department: "Quality", loss: "Quality", summary: "Use defect stratification and parameter verification to reduce process variation.", tags: ["Defect", "Standardization", "Quality"], result: "Defect trend improved after standardization (sample case)." },
+  { id: "KB-003", title: "Compressed air leakage improvement", type: "FI", department: "Maintenance", loss: "Cost", summary: "Leak survey, tagging, repair and verification of compressed-air systems.", tags: ["Energy", "Maintenance", "Utility"], result: "Energy loss reduced after repair (sample case)." },
+  { id: "KB-004", title: "SMED for production line changeover", type: "Kaizen", department: "Production", loss: "Delivery", summary: "Separate internal and external activities and prepare tools before changeover.", tags: ["SMED", "Productivity", "Delivery"], result: "Changeover time reduced (sample case)." }
+];
+
+export const initialSignals = [
+  { id: "SIG-001", area: "Area B", category: "Quality", metric: "Defect rate", baseline: 2.1, current: 3.4, unit: "%", severity: "High", reason: "Current value is 62% above baseline.", suggestion: "Review top defect modes and compare with KB-002." },
+  { id: "SIG-002", area: "Area E", category: "Quality", metric: "Open improvement coverage", baseline: 1, current: 0, unit: "project", severity: "Medium", reason: "No active CI project is linked to the abnormal quality signal.", suggestion: "Start a screening activity and assign an owner." },
+  { id: "SIG-003", area: "Area C", category: "Delivery", metric: "Changeover time", baseline: 42, current: 55, unit: "min", severity: "Medium", reason: "Changeover time is 31% above baseline.", suggestion: "Review SMED opportunities and the existing Area C project." }
+];
